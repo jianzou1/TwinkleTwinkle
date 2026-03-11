@@ -1,0 +1,47 @@
+.logo {
+    margin: 5% auto 1%;
+    width: 768px;
+    height: 278px;
+    /* 增加外阴影提升立体感，调整内阴影透明度 */
+    border: rgb(177, 176, 176) 1px solid;
+    border-bottom: white 2px solid;
+    border-right: white 2px solid;
+    overflow: hidden;
+    position: relative;
+    /* 添加容器过渡效果 */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .logo .text-container {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    white-space: pre;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    
+    /* 修改为黑色文字及阴影 */
+    color: #000000;
+    text-shadow: 
+      0 1px 1px rgba(255, 255, 255, 0.3),    /* 顶部反光 */
+      0 -1px 2px rgba(0, 0, 0, 0.4),         /* 底部投影 */
+      0 2px 4px rgba(0, 0, 0, 0.2);          /* 整体柔化阴影 */
+    
+    transition: 
+      transform 0.08s cubic-bezier(0.8, 0.9, 0.8, 1),
+      text-shadow 0.3s ease;
+  }
+  
+  .logo .text-container:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+    /* 悬停时增强立体阴影效果 */
+    text-shadow: 
+      0 2px 2px rgba(255, 255, 255, 0.4),    /* 强化顶部反光 */
+      0 -2px 4px rgba(0, 0, 0, 0.6),         /* 加深底部投影 */
+      0 4px 8px rgba(0, 0, 0, 0.3),          /* 扩展整体阴影 */
+      0 0 12px rgba(0, 0, 0, 0.2);           /* 添加弥散阴影效果 */
+  }

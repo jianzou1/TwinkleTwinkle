@@ -1,0 +1,75 @@
+/* article.css */
+
+#links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    /* 缩小容器之间的间距 */
+}
+
+.link-preview {
+    flex: 0 1 calc(16.66% - 8px);
+    /* 每个链接占据容器的大约16.66%宽度，减去新的间隙，这样每行可以展示6个 */
+    box-sizing: border-box;
+
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 垂直居中 */
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    /* 减小内边距 */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.link-title {
+    border: 1px solid transparent;
+    /* 初始状态下使用透明边框 */
+}
+
+.link-container:hover .link-title {
+    background-color: rgba(0, 2, 129, 1);
+    /* 鼠标悬停时的半透明蓝色背景 */
+    color: rgb(223, 223, 223);
+    /* 更改字体颜色为红色 (可以根据需要调整颜色) */
+    border: 1px dotted rgb(161, 161, 161);
+    /* 修改为虚线边框 */
+}
+
+.link-icon {
+    width: 48px;
+    /* 减小图标宽度 */
+    height: 48px;
+    /* 减小图标高度 */
+    background-size: cover;
+    /* 图标覆盖容器 */
+    margin-bottom: 0;
+    /* 去掉图标与标题之间的间距 */
+}
+
+.link-title {
+    font-family: "Pixelated MS Sans Serif", Arial, sans-serif;
+    font-size: 12px;
+    /* 减小字体大小 */
+    line-height: 1;
+    /* 减小行高 */
+    display: -webkit-box;
+    /* 创建一个弹性盒子 */
+    -webkit-box-orient: vertical;
+    /* 设置盒子为垂直方向 */
+    -webkit-line-clamp: 2;
+    /* 限制显示的行数为2行 */
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    text-overflow: ellipsis;
+    /* 超出部分用省略号表示 */
+    max-width: 55px;
+    /* 减小最大宽度 */
+    user-select: none;
+    /* 阻止标题文本被选中 */
+}

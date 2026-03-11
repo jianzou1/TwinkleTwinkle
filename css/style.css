@@ -1,0 +1,190 @@
+@import "progress.css"; 
+@import "article.css"; 
+@import "game.css";
+@import "gallery.css";
+@import "about.css";
+@import "logo.css";
+@import "daily.css";
+@import "password.css";
+
+
+:root.css-loading body {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+:root.css-loaded body {
+  visibility: visible;
+  opacity: 1;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+body {
+  height: 100%;
+  margin: 0; /* 去除默认边距 */
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-direction: column; /* 主轴方向为垂直 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  background-color: #6b2c5f;
+}
+
+/* 保持其他部分不变 */
+
+menu[role=tablist] > li {
+  font-family: "Pixelated MS Sans Serif", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  min-width: 75px; /* 最小宽度 */
+  width: auto;
+  max-width: 180px;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #C0C0C0; /* 背景色 */
+}
+
+.window {
+  padding: 2px;
+  transition: width 0.15s ease-in-out, height 0.15s ease-in-out; /* 宽度和高度的过渡效果 */
+  width: 768px; /* 宽度 */
+  max-width: 768px; /* 最大宽度 */
+  overflow: hidden; /* 溢出隐藏 */
+  margin: 0 auto; /* 水平居中 */
+  margin-bottom: 5px;
+}
+
+.window img {
+  border-image: url('/ui/border.png') 15 fill; /* 边框图像切片为15，46/3≈15 */
+  border-image-slice: 15; /* 切片大小为15，分成九宫格 */
+  border-image-width: 15px; /* 设置边框宽度 */
+  border-image-outset: 0; /* 不需要外延 */
+  background-color: transparent; /* 背景透明 */
+  padding: 3px; /* 内边距，保持图片在边框内 */
+  max-width: 95%; /* 最大宽度 */
+  height: auto; /* 高度自适应 */
+  border-style: solid; /* 设置边框样式 */
+}
+
+
+.status-bar {
+  background-color: #C0C0C0; /* 背景色 */
+  margin: 5px 0 2%; /* 上下外边距 */
+  padding: 2px; /* 内边距 */
+}
+
+.status-bar p {
+  font-family: "Pixelated MS Sans Serif", Arial, sans-serif;
+  font-size: 12px; /* 字体大小 */
+  padding: 2px; /* 内边距 */
+  white-space: pre-wrap;
+}
+
+p, .window li, h1, h2, h3, h4, h5 {
+  line-height: 1.4; /* 行高 */
+  font-size: 14px; /* 字体大小 */
+  font-family: Microsoft Yahei, SimSun, NSimSun, SimHei; /* 字体系列 */
+  margin-bottom: 20px; /* 底部外边距 */
+}
+
+ul.tree-view li {
+  margin-top: 1%; /* 顶部外边距 */
+  font-family: "Pixelated MS Sans Serif", Arial, Microsoft Yahei; /* 字体系列 */
+  font-size: 11px; /* 字体大小 */
+  line-height: 0.2 !important; /* 行高 */
+  text-decoration: underline dotted blue; /* 下划线样式 */
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold; /* 加粗 */
+}
+
+h1 { font-size: 30px; } /* 字体大小 */
+h2 { font-size: 25px; } /* 字体大小 */
+h3 { font-size: 20px; } /* 字体大小 */
+h4 { font-size: 18px; } /* 字体大小 */
+h5 { font-size: 16px; } /* 字体大小 */
+
+code {
+  font-family: Microsoft Yahei, SimSun, NSimSun, SimHei; /* 字体系列 */
+  background-color: #f4f4f4; /* 背景色 */
+  padding: 2px; /* 内边距 */
+  margin: 0 5px; /* 左右外边距 */
+  border: 1px solid #ddd; /* 边框 */
+  border-radius: 4px; /* 圆角 */
+  font-size: 13px; /* 字体大小 */
+  color: #333; /* 字体颜色 */
+}
+
+.table-figure {
+  border-collapse: collapse; /* 边框合并 */
+  margin: 20px auto; /* 上下外边距，水平居中 */
+  font-size: 14px; /* 字体大小 */
+  overflow: auto; /* 溢出时显示滚动条 */
+}
+
+.back-to-top {
+  position: fixed; /* 固定定位 */
+  bottom: 20px; /* 底部距离 */
+  right: 20px; /* 右侧距离 */
+  margin-right: 10%; /* 右侧外边距 */
+  z-index: 99; /* 层级 */
+  display: none; /* 默认隐藏 */
+  text-align: center; /* 文本居中 */
+}
+
+@media (max-width: 768px) { /* 媒体查询，屏幕宽度小于768px时 */
+  .logo { margin: 5% auto 20px;  max-width: 375px;height: 136px; /* 最大宽度 */} /* 上下外边距 */
+  .window {
+    width: 100%; /* 宽度 */
+    max-width: 375px; /* 最大宽度 */
+    padding: 5px; /* 内边距 */
+  }
+  .window img { max-width: 100%; } /* 图片最大宽度 */
+  .status-bar { margin-bottom: 5%; } /* 底部外边距 */
+  p, .window li, h1, h2, h3, h4 {
+    font-size: 16px; /* 字体大小 */
+    margin-bottom: 10px; /* 底部外边距 */
+  }
+  code { font-size: 12px; } /* 代码字体大小 */
+  .table-figure { font-size: 12px; } /* 表格字体大小 */
+  .back-to-top { margin-right: 5%; } /* 右侧外边距 */
+}
+
+@keyframes fadeIn { /* 淡入动画 */
+  0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); } /* 开始和结束状态 */
+  25%, 75% { opacity: 0.5; } /* 中间状态 */
+}
+
+.window.active { animation: fadeIn 0.15s ease-in-out; } /* 窗口激活时的动画 */
+
+.tips {
+  position: absolute; /* 绝对定位 */
+  font-family: "Pixelated MS Sans Serif", Arial, sans-serif;
+  line-height: 1.2;
+  background-color: #FFFFE1; /* 背景颜色 */
+  border: #000 1px solid; /* 边框 */
+  color: black; /* 字体颜色 */
+  padding: 3px 3px; /* 内边距 */
+  z-index: 9000; /* 确保在其他元素之上 */
+  transition: opacity 0.1s; /* 平滑过渡效果 */
+  opacity: 0; /* 初始状态不可见 */
+  white-space: normal; /* 允许换行 */
+  max-width: 160px; /* 可选：设置最大宽度以控制换行 */
+}
+.crt-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  pointer-events: none;
+}

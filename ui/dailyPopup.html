@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- 半透明黑色背景 -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- 弹窗 -->
+  <div id="welcome-popup" class="window">
+    <header class="title-bar">
+      <div class="title-bar-text" data-lang-id="dailty_popup_title">welcome</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close" onclick="closePopup()"></button>
+      </div>
+    </header>
+    <section class="window-body">
+      <p style="text-align: left; line-height: 1;" data-lang-id="dailty_popup_text"></p>
+      <select id="lang-switcher">
+        <option value="en">English</option>
+        <option value="cn">简体中文</option>
+        <option value="jp">にほんご</option>
+      </select><br>
+      <input type="checkbox" id="crtToggle" checked>
+      <label for="crtToggle" data-lang-id="CRT">CRT Simulation</label>
+      <p><strong class="version-date" data-lang-id="update_info"></strong></p>
+      <hr>
+    </section>
+    <button id="close-popup" data-lang-id="btn_ok">Confirm</button>
+  </div>
+  <script src="/js/dailyPopup.js"></script>
+</body>
+
+</html>

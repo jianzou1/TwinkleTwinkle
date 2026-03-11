@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <%- include('../templates/header.ejs') %>
+ <body>
+    <!-- <div class="logo"></div> -->
+    <main id="main" class="main">
+        <div class="window-body">
+            <menu role="tablist"></menu>
+            <div class="window" role="tabpanel">
+                <div class="window-body">
+                    <h2 id="topTitleDisplay">标题</h2>
+                    <select id="titleSelect" aria-label="选择标题"></select>
+                    <div class="gallery-images" id="gallery-images"></div>
+                    <div class="navigation-bar" aria-label="图库导航">
+                        <button id="prevPage" aria-label="上一页" data-lang-id="previous_page"></button>
+                        <span id="pageIndicator"></span>
+                        <button id="nextPage" aria-label="下一页" data-lang-id="next_page"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="imageModal" class="modal" style="display:none;" role="dialog">
+            <div class="window" style="width: 800px;">
+                <div class="title-bar">
+                    <div class="title-bar-text" data-lang-id="original_image"></div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close" id="modalClose">&times;</button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <img class="modal-content" id="modalImage" alt="模态图像">
+                    <div class="caption" id="caption"></div> 
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<%- include('../templates/function.ejs') %>
+</html>

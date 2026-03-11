@@ -1,0 +1,254 @@
+[
+  {
+    "id": "index_title",
+    "cn": "回忆的爱玛侬",
+    "en": "Memories of Emanon",
+    "jp": "Memories of Emanon"
+  },
+  {
+    "id": "article_title",
+    "cn": "文章",
+    "en": "Article",
+    "jp": "記事"
+  },
+  {
+    "id": "game_title",
+    "cn": "游戏",
+    "en": "Game",
+    "jp": "ゲーム"
+  },
+  {
+    "id": "gallery_title",
+    "cn": "画廊",
+    "en": "Gallery",
+    "jp": "ギャラリー"
+  },
+  {
+    "id": "about_title",
+    "cn": "关于",
+    "en": "About",
+    "jp": "について"
+  },
+  {
+    "id": "index_year_progress",
+    "cn": "年进度",
+    "en": "Year progress",
+    "jp": "年の進行状況"
+  },
+  {
+    "id": "index_month_progress",
+    "cn": "月进度",
+    "en": "Month progress",
+    "jp": "月の進行状況"
+  },
+  {
+    "id": "index_day_progress",
+    "cn": "天进度",
+    "en": "Day progress",
+    "jp": "日の進行状況"
+  },
+  {
+    "id": "index_year_tips",
+    "cn": "这个进度条显示了今年已经过去了多少",
+    "en": "This progress bar indicates how much of the year has passed",
+    "jp": "この進捗バーは今年がどれだけ経過したかを示しています"
+  },
+  {
+    "id": "index_month_tips",
+    "cn": "这个进度条显示了本月已经过去了多少",
+    "en": "This progress bar indicates how much of the month has passed.",
+    "jp": "この進捗バーは今月がどれだけ経過したかを示しています"
+  },
+  {
+    "id": "index_day_tips",
+    "cn": "这个进度条显示了今天已经过去了多少",
+    "en": "This progress bar indicates how much of the day has passed.",
+    "jp": "この進捗バーは今日がどれだけ経過したかを示しています"
+  },
+  {
+    "id": "index_refresh",
+    "cn": "刷新时间剩余 {0}m {1}s",
+    "en": "Refresh in {0}m {1}s",
+    "jp": "更新まであと {0} 分 {1} 秒"
+  },
+  {
+    "id": "index_refresh_tips",
+    "cn": "倒计时结束后，所有的进度条都将被刷新",
+    "en": "After the countdown ends, all progress bars will be refreshed.",
+    "jp": "カウントダウンが終了したら、すべての進捗バーが更新されます"
+  },
+  {
+    "id": "dailty_popup_title",
+    "cn": "欢迎登录",
+    "en": "welcome to log in",
+    "jp": "ログインを歓迎します"
+  },
+  {
+    "id": "dailty_popup_text",
+    "cn": "请选择你的语言：",
+    "en": "Please choose your language:",
+    "jp": "あなたの言語を選択してください："
+  },
+  {
+    "id": "btn_ok",
+    "cn": "确定",
+    "en": "Confirm",
+    "jp": "確認する"
+  },
+  {
+    "id": "tab_progress",
+    "cn": "进度条",
+    "en": "Progress",
+    "jp": "進捗バー"
+  },
+  {
+    "id": "tab_article",
+    "cn": "文章",
+    "en": "Article",
+    "jp": "記事"
+  },
+  {
+    "id": "tab_game",
+    "cn": "游戏",
+    "en": "Game",
+    "jp": "ゲーム"
+  },
+  {
+    "id": "tab_gallery",
+    "cn": "画廊",
+    "en": "Gallery",
+    "jp": "ギャラリー"
+  },
+  {
+    "id": "tab_about",
+    "cn": "关于",
+    "en": "About",
+    "jp": "について"
+  },
+  {
+    "id": "footer_update_time",
+    "cn": "上次更新：{0}",
+    "en": "Last Updated:{0}",
+    "jp": "前回更新：{0}"
+  },
+  {
+    "id": "footer_name",
+    "cn": "TwinkleTwinkle",
+    "en": "TwinkleTwinkle",
+    "jp": "TwinkleTwinkle"
+  },
+  {
+    "id": "footer_art",
+    "cn": "由 Cry 进行艺术化",
+    "en": "Artistic by Cry",
+    "jp": "Artistic by Cry"
+  },
+  {
+    "id": "CRT",
+    "cn": "CRT效果模拟",
+    "en": "CRT Simulation",
+    "jp": "CRT 効果シミュレーション"
+  },
+  {
+    "id": "total_time",
+    "cn": "{0}小时，",
+    "en": "{0} hours,",
+    "jp": "{0} 時間、"
+  },
+  {
+    "id": "equivalent_days",
+    "cn": "相当于{0}天，",
+    "en": "equivalent to {0} days,",
+    "jp": "{0} 日に相当し、"
+  },
+  {
+    "id": "equivalent_years",
+    "cn": "相当于{0}年。",
+    "en": "approximately {0} years.",
+    "jp": "{0} 年に相当します。"
+  },
+  {
+    "id": "game_describe",
+    "cn": "游戏并非人生，但是我已经玩了：",
+    "en": "Games are not life, but I've been playing for:",
+    "jp": "ゲームは人生ではありませんが、私はすでにプレイしています："
+  },
+  {
+    "id": "game_roll_btn",
+    "cn": "随机游戏",
+    "en": "Random games",
+    "jp": "ランダムゲーム"
+  },
+  {
+    "id": "game_sort_quality",
+    "cn": "按主观游戏评级排序",
+    "en": "Sort by subjective game ratings",
+    "jp": "主観的なゲーム評価で並べ替える"
+  },
+  {
+    "id": "game_sort_type",
+    "cn": "按游戏类型排序",
+    "en": "Sort by game genre",
+    "jp": "ゲームジャンルで並べ替える"
+  },
+  {
+    "id": "game_sort_time",
+    "cn": "按游戏时长排序",
+    "en": "Sort by game duration",
+    "jp": "ゲームのプレイ時間で並べ替える"
+  },
+  {
+    "id": "previous_page",
+    "cn": "上一页",
+    "en": "Previous",
+    "jp": "前のページ"
+  },
+  {
+    "id": "next_page",
+    "cn": "下一页",
+    "en": "Next",
+    "jp": "次のページ"
+  },
+  {
+    "id": "original_image",
+    "cn": "原图",
+    "en": "originnal image",
+    "jp": "オリジナル画像"
+  },
+  {
+    "id": "about",
+    "cn": "嗨！我是Shelton Chu，一位来自中国的游戏策划与艺术家。\r\n想要更深入地了解我，最好的方式就是浏览这个网站。\r\n若要开始探索，你可以看看顶部的导航栏，希望你在此浏览愉快！\r\n",
+    "en": "Hi! I'm Shelton Chu, a game designer and artist from China.\r\nThe best way to get to know me better is to browse through this website.\r\nTo start your exploration, you can take a look at the navigation bar at the top. I hope you have a pleasant browsing experience here!\r\n",
+    "jp": " こんにちは！私はシェルトン・チューです。中国出身のゲームデザイナーとアーティストです。\r\n私をもっと深く知るには、このウェブサイトを見て回るのが一番いい方法です。\r\n探検を始めるには、トップのナビゲーションバーを見てみてください。ここで楽しいブラウジング体験をしていただければ幸いです！\r\n"
+  },
+  {
+    "id": "thanks_project",
+    "cn": "感谢以下这些项目：",
+    "en": "Thanks to the following projects:",
+    "jp": "以下のプロジェクトに感謝します："
+  },
+  {
+    "id": "update_info",
+    "cn": "最近更新\r\n版本号：13.0.0\r\n发布日期：2025-04-01\r\n核心更新：\r\n多语言系统增强\r\n• 新增日语语言支持（801bda8）\r\n• 扩展基础语言框架（7ec452e）",
+    "en": "Recent Update\r\nVersion Number: 13.0.0\r\nRelease Date: April 1, 2025\r\nCore Updates:\r\nEnhancement of the Multilingual System\r\n• Added Japanese language support (801bda8)\r\n• Extended the basic language framework (7ec452e)",
+    "jp": "最近のアップデート\r\nバージョン番号：13.0.0\r\nリリース日：2025 年 4 月 1 日\r\n核心アップデート：\r\n多言語システムの強化\r\n・日本語の言語サポートを新たに追加しました（801bda8）\r\n・基本的な言語フレームワークを拡張しました（7ec452e）"
+  },
+  {
+    "id": "password_title",
+    "cn": "密码验证",
+    "en": "Password",
+    "jp": "パスワード"
+  },
+  {
+    "id": "password_input_placeholder",
+    "cn": "请输入密码",
+    "en": "Enter password",
+    "jp": "パスワードを入力"
+  },
+  {
+    "id": "timer.refresh_complete",
+    "cn": "正在刷新",
+    "en": "Refreshing",
+    "jp": "更新中"
+  }
+]

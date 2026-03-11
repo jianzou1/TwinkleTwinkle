@@ -1,0 +1,39 @@
+<!-- loading.html -->
+<style>
+#loading-animation {
+    width: 48px; /* 根据需要调整宽度 */
+    height: 48px; /* 根据需要调整高度 */
+    background-size: cover; /* 确保背景图像覆盖整个元素 */
+    animation: loadingAnimation 0.4s steps(60) 1 forwards; /* 动画持续时间、帧数、播放次数 */
+    position: fixed; /* 使用固定定位 */
+    top: 5px; /* 距离顶部0 */
+    left: 5px; /* 距离左边0 */
+    z-index: 9999; /* 确保在其他元素之上 */
+}
+
+@keyframes loadingAnimation {
+    0% { background-image: url('/icon/loading/brasero-disc-05.png'); }
+    5% { background-image: url('/icon/loading/brasero-disc-10.png'); }
+    10% { background-image: url('/icon/loading/brasero-disc-15.png'); }
+    15% { background-image: url('/icon/loading/brasero-disc-20.png'); }
+    20% { background-image: url('/icon/loading/brasero-disc-25.png'); }
+    25% { background-image: url('/icon/loading/brasero-disc-30.png'); }
+    30% { background-image: url('/icon/loading/brasero-disc-35.png'); }
+    35% { background-image: url('/icon/loading/brasero-disc-40.png'); }
+    40% { background-image: url('/icon/loading/brasero-disc-45.png'); }
+    45% { background-image: url('/icon/loading/brasero-disc-50.png'); }
+    50% { background-image: url('/icon/loading/brasero-disc-55.png'); }
+    55% { background-image: url('/icon/loading/brasero-disc-60.png'); }
+    60% { background-image: url('/icon/loading/brasero-disc-65.png'); }
+    65% { background-image: url('/icon/loading/brasero-disc-70.png'); }
+    70% { background-image: url('/icon/loading/brasero-disc-75.png'); }
+    75% { background-image: url('/icon/loading/brasero-disc-80.png'); }
+    80% { background-image: url('/icon/loading/brasero-disc-85.png'); }
+    85% { background-image: url('/icon/loading/brasero-disc-90.png'); }
+    90% { background-image: url('/icon/loading/brasero-disc-95.png'); }
+    95% { background-image: url('/icon/loading/brasero-disc-100.png'); }
+}
+</style>
+<div id="loading-animation" style="display: none;">
+    <!-- 其他帧可以在这里添加 -->
+</div>

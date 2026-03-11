@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <%- include('../templates/header.ejs') %>
+ <body>
+    <!-- <div class="logo"></div> -->
+    <main id="main" class="main">
+        <div class="window-body">
+            <menu role="tablist"></menu>
+            <div class="window" role="tabpanel">
+                <div class="window-body">
+
+                    <div
+                        style="background: url('/favicon/android-chrome-192x192.png')no-repeat;height: 100px;width: 100px;background-size:100%;;margin-bottom: 15px;margin-top: 20px">
+                    </div>
+                    <p data-lang-id="about"></p>
+                    <p data-lang-id="thanks_project"></p>
+                    <p>         
+                        <a href="https://github.com/jdan/98.css">98.css</a><br>
+                        <a href="https://github.com/webpack/webpack">webpack</a><br>
+                        <a href="https://github.com/MoOx/pjax">pjax</a><br>
+                        <a href="https://github.com/markedjs/marked">marked</a><br>
+                        <a href="https://github.com/mde/ejs">ejs</a><br>
+                        <a href="https://www.netlify.com/">Netlify</a><br>
+                        <a href="https://neocities.org/">Neocities</a>
+                    </p>
+                    <br>
+                    <div class="password" data-pjax-url="/page/password.html"></div>
+                    <div class="computer-fail-icon" data-pjax-url="/404.html"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<%- include('../templates/function.ejs') %>
+</html>

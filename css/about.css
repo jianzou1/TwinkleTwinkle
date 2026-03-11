@@ -1,0 +1,54 @@
+table {
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    border-spacing: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+table td {
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 5px;
+}
+
+.xl65 {
+    color: rgb(34, 34, 34);
+}
+
+.table-icon {
+    width: 16px;
+    /* 设置图标宽度 */
+    height: 16px;
+    /* 设置图标高度 */
+    display: inline-block;
+    /* 使 div 作为块级元素 */
+    background-size: contain;
+    /* 保持图片比例 */
+    background-repeat: no-repeat;
+    /* 不重复背景 */
+    vertical-align: middle;
+    /* 垂直对齐 */
+}
+
+    .computer-fail-icon {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 48px;
+        height: 48px; /* 确保高度与宽度一致 */
+        background-image: url('/icon/computer-fail.png');
+        background-size: cover; /* 确保图片覆盖整个 div */
+        cursor: pointer; /* 添加鼠标指针样式 */
+    }
+
+       .password {
+        position: absolute;
+        bottom: 10px;
+        right: 80px;
+        width: 48px;
+        height: 48px; /* 确保高度与宽度一致 */
+        background-image: url('/icon/keys-5.png');
+        background-size: cover; /* 确保图片覆盖整个 div */
+        cursor: pointer; /* 添加鼠标指针样式 */
+    }

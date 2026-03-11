@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <style>
+    @import url(https://unpkg.com/98.css); /* 导入外部样式表 98.css */
+
+    body {
+      position: fixed;
+      display: flex;
+      flex-direction: column; /* 使用 flex-direction 简化写法 */
+      background-color: #008689;
+      color: white;
+      font-family: "Pixelated MS Sans Serif", Arial, sans-serif; /* 增加安全字体 */
+      font-weight: bold;
+      font-size: 18px;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    span {
+      text-align: center;
+      background-color: white;
+      color: #008689;
+    }
+
+    p {
+      line-height: 1.5;
+      margin: 5px 0; /* 增加段落间距 */
+    }
+
+    #home {
+      cursor: pointer;
+      text-decoration: underline; /* 增加可点击效果 */
+    }
+  </style>
+</head>
+
+<body>
+  <span>unknown</span>
+  <script>
+    document.getElementById('home').addEventListener('click', function () {
+      window.location.href = '/'; // 返回主页
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        try {
+          if (document.referrer) {
+            // 如果有上一页，返回上一页
+            window.history.back();
+          } else {
+            // 如果没有上一页，关闭窗口
+            window.close();
+          }
+        } catch (error) {
+          console.error("Error handling keydown event:", error);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
+ 
