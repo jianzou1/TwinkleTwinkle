@@ -29,6 +29,7 @@
     "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
+    "three": "^0.183.2",
     "xlsx": "^0.18.5"
   }
 }

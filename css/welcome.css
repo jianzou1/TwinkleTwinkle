@@ -1,0 +1,66 @@
+/* ==================== Welcome Page ==================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000000;
+  cursor: default;
+}
+
+#welcome-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#welcome-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Bottom hint text ---------- */
+#welcome-hint {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Pixelated MS Sans Serif", "MS Sans Serif", monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  user-select: none;
+  pointer-events: none;
+  animation: hintBreath 3s ease-in-out infinite;
+}
+
+@keyframes hintBreath {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+/* ---------- Fade overlay for page transition ---------- */
+#fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.8s ease-in;
+}
+
+#fade-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

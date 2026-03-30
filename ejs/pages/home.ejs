@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <%- include('../templates/header.ejs') %>
+ <body>
+    <!-- <div class="logo"></div> -->
+    <main id="main" class="main">
+        <div class="window-body">
+            <menu role="tablist"></menu>
+            <div class="window" role="tabpanel">
+                <div class="window-body">
+
+                    <div class="password-input-wrapper">
+                        <img src="/icon/key_padlock-0.png" class="password-input-icon" alt="" />
+                        <input type="password" placeholder="Enter password" data-lang-placeholder="password_input_placeholder" id="password-input" />
+                    </div>
+                    <button id="password-submit" data-lang-id="btn_ok">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<%- include('../templates/function.ejs') %>
+</html>

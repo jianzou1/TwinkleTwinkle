@@ -17,7 +17,7 @@ import langManager from '/js/langManager.js';
 
 const TABLIST_SELECTOR = '[role="tablist"]';
 const TAB_DATA = [
-  { url: '/', text: 'TwinkleTwinkle' }
+  { url: '/page/home.html', text: 'TwinkleTwinkle' }
 ];
 
 const bindGlobalPjaxNavigation = (pjax, getTabHandler) => {
@@ -131,7 +131,7 @@ const initializeApp = async () => {
 
         // 页面类型判断
         switch (currentUrl) {
-          case '/':
+          case '/page/home.html':
             initializePassword(pjax);
             break;
           case '/page/article.html':

@@ -20,9 +20,13 @@ module.exports = (env, argv) => {
     const outputDir = page === 'index' ? '' : 'page';
     const templatePath = path.resolve(pagesDir, `${page}.ejs`);
 
+    // index.ejs (欢迎页) 使用 welcome chunk，其余页面使用 main chunk
+    const chunks = page === 'index' ? ['welcome'] : ['main'];
+
     return new HtmlWebpackPlugin({
       filename: path.join(outputDir, `${page}.html`),
       template: templatePath,
+      chunks,
       templateParameters: (compilation, assets, options) => {
         const templateContent = fs.readFileSync(templatePath, 'utf-8');
         return {
@@ -42,9 +46,12 @@ module.exports = (env, argv) => {
   });
 
   return {
-    entry: './js/index.js',
+    entry: {
+      main: './js/index.js',
+      welcome: './js/welcome/index.js',
+    },
     output: {
-      filename: 'main.js',
+      filename: '[name].js',
       path: path.resolve(__dirname, ''),
       publicPath: '/',
       // 禁用默认的资源处理
@@ -105,7 +112,9 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: 'styles.css',
+        filename: (pathData) => {
+          return pathData.chunk.name === 'welcome' ? 'welcome.css' : 'styles.css';
+        },
         chunkFilename: '[id].css'
       }),
       ...htmlPlugins

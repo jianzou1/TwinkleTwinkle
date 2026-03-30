@@ -32,7 +32,7 @@ body {
   flex-direction: column; /* 主轴方向为垂直 */
   align-items: center; /* 垂直居中对齐 */
   justify-content: center; /* 水平居中对齐 */
-  background-color: #6b2c5f;
+  background-color: #000000;
 }
 
 /* 保持其他部分不变 */

@@ -1,1 +1,62 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title data-lang-id="game_title">‎</title><link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="shortcut icon" href="/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><script defer="defer" src="/main.js"></script><link href="/styles.css" rel="stylesheet"></head><body><main id="main" class="main"><div class="window-body"><menu role="tablist"></menu><div class="window" role="tabpanel"><div class="window-body"><div class="explain-content"><span data-lang-id="game_describe"></span><br><span data-lang-id="total_time"></span> <span data-lang-id="equivalent_days"></span> <span data-lang-id="equivalent_years"></span><br><button id="gameRollBtn" data-lang-id="game_roll_btn">随机游戏</button><div id="gameResult"></div><div id="story"></div><div class="select-container"><div class="field-row"><input id="radio4" type="radio" name="sort-option" value="按游戏评级排序" checked="checked"> <label for="radio4" data-lang-id="game_sort_quality">按主观游戏评级排序</label></div><div class="field-row"><input id="radio5" type="radio" name="sort-option" value="按游戏类型排序"> <label for="radio5" data-lang-id="game_sort_type">按游戏类型排序</label></div><div class="field-row"><input id="radio6" type="radio" name="sort-option" value="按游戏时长排序"> <label for="radio6" data-lang-id="game_sort_time">按游戏时长排序</label></div></div></div><div class="game-list"></div></div></div></div><div id="tips" class="tips" style="display:none"></div></main></body><canvas class="crt-effect"></canvas><div id="tips" class="tips" style="display:none"></div><button class="back-to-top" onclick="scrollToTop()"><img src="/icon/go-top.png" alt="Back to Top" style="vertical-align:middle"></button><div class="crt monitor"></div><div id="loading-container" style="display:none"></div><div class="dynamic-footer"></div></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title data-lang-id="game_title">‎</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+<script defer src="/main.js"></script></head>
+
+ <body>
+    <!-- <div class="logo"></div> -->
+    <main id="main" class="main">
+        <div class="window-body">
+            <menu role="tablist"></menu>
+            <div class="window" role="tabpanel">
+                <div class="window-body">
+                    <div class="explain-content">
+                        <span data-lang-id="game_describe"></span>
+                        <br>
+                        <span data-lang-id="total_time"></span>
+                        <span data-lang-id="equivalent_days"></span>
+                        <span data-lang-id="equivalent_years"></span>
+                        <br>
+                        <button id="gameRollBtn" data-lang-id="game_roll_btn">随机游戏</button>
+                        <div id="gameResult"></div>
+                        <div id="story"></div>
+                        <div class="select-container">
+                            <div class="field-row">
+                                <input id="radio4" type="radio" name="sort-option" value="按游戏评级排序" checked>
+                                <label for="radio4" data-lang-id="game_sort_quality">按主观游戏评级排序</label>
+                            </div>
+                            <div class="field-row">
+                                <input id="radio5" type="radio" name="sort-option" value="按游戏类型排序">
+                                <label for="radio5" data-lang-id="game_sort_type">按游戏类型排序</label>
+                            </div>
+                            <div class="field-row">
+                                <input id="radio6" type="radio" name="sort-option" value="按游戏时长排序">
+                                <label for="radio6" data-lang-id="game_sort_time">按游戏时长排序</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-list">
+                        <!-- 游戏列表将被插入在这里 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tips" class="tips" style="display: none;"></div>
+    </main>
+</body>
+<canvas class="crt-effect"></canvas>
+<div id="tips" class="tips" style="display: none;"></div>
+<button class="back-to-top" onclick="scrollToTop()"><img src="/icon/go-top.png" alt="Back to Top" style="vertical-align: middle;"></button>
+<div class="crt monitor"></div>
+<div id="loading-container" style="display: none;"></div>
+<div class="dynamic-footer"></div>
+</html>
